@@ -17,7 +17,7 @@ ENV LC_ALL en_US.UTF-8
 # Download and install NVIDIA CUDA
 RUN mkdir -p /nvidia/build && \
     cd /nvidia/build/ && \
-    curl -o nvidia-install http://us.download.nvidia.com/XFree86/Linux-x86_64/375.66/NVIDIA-Linux-x86_64-375.66.run && \
+    curl -o nvidia-install http://us.download.nvidia.com/tesla/384.81/NVIDIA-Linux-x86_64-384.81.run
     chmod +x nvidia-install && \
     /nvidia/build/nvidia-install -s -N --no-kernel-module && \
     rm -r /nvidia/
